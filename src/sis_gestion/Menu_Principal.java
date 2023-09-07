@@ -67,11 +67,11 @@ public class Menu_Principal extends javax.swing.JFrame {
         );
         ContenidoLayout.setVerticalGroup(
             ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 574, Short.MAX_VALUE)
+            .addGap(0, 576, Short.MAX_VALUE)
         );
 
-        jMenuBar1.setBackground(new java.awt.Color(255, 204, 204));
-        jMenuBar1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jMenuBar1.setBackground(new java.awt.Color(255, 0, 204));
+        jMenuBar1.setBorder(null);
         jMenuBar1.setToolTipText("");
         jMenuBar1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
 

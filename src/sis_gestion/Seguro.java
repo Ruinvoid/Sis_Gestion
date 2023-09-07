@@ -43,6 +43,8 @@ public class Seguro extends javax.swing.JPanel {
         jLabel14 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(244, 231, 215));
 
@@ -56,7 +58,7 @@ public class Seguro extends javax.swing.JPanel {
         jLabel5.setText("Puesto:");
 
         jLabel4.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel4.setText("Area:");
+        jLabel4.setText("Área:");
 
         jLabel3.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jLabel3.setText("Apellido materno:");
@@ -74,22 +76,22 @@ public class Seguro extends javax.swing.JPanel {
         jLabel7.setText("Seguros voluntarios:");
 
         jLabel8.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel8.setText("- Seguro de Accidentes de trabajo");
+        jLabel8.setText("- Seguro de Accidentes de trabajo*");
 
         jLabel10.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jLabel10.setText("- Seguro de Responsabilidad civil");
 
         jLabel11.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel11.setText("- Seguro de vida");
+        jLabel11.setText("- Seguro de vida*");
 
         jLabel12.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel12.setText("- Seguro medico:");
+        jLabel12.setText("- Seguro medico*");
 
         jLabel13.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel13.setText("- Seguro de discapacidad:");
+        jLabel13.setText("- Seguro de discapacidad*");
 
         jLabel14.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel14.setText("- Seguro de accidentes:");
+        jLabel14.setText("- Seguro de accidentes*");
 
         jButton2.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jButton2.setText("Agregar seguro");
@@ -104,6 +106,22 @@ public class Seguro extends javax.swing.JPanel {
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
+            }
+        });
+
+        jButton4.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        jButton4.setText("Imprimir archivo");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        jButton5.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        jButton5.setText("Consultar seguro");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
             }
         });
 
@@ -122,27 +140,33 @@ public class Seguro extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel8))
+                            .addComponent(jLabel3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14)
                             .addComponent(jLabel4)
-                            .addComponent(jLabel5)
+                            .addComponent(jLabel5))
+                        .addGap(299, 299, 299))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel10))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel14)
                             .addComponent(jLabel7)
                             .addComponent(jLabel11)
                             .addComponent(jLabel12)
-                            .addComponent(jLabel13))
-                        .addGap(133, 133, 133))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jLabel13)
+                            .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(108, 108, 108))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -161,6 +185,11 @@ public class Seguro extends javax.swing.JPanel {
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3)
+                    .addComponent(jButton5))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
@@ -170,18 +199,16 @@ public class Seguro extends javax.swing.JPanel {
                     .addComponent(jLabel8)
                     .addComponent(jLabel11))
                 .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel12))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel13)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
-                .addContainerGap(233, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 184, Short.MAX_VALUE)
+                .addComponent(jButton4)
+                .addGap(26, 26, 26))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -193,11 +220,21 @@ public class Seguro extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
